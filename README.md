@@ -1,3 +1,3 @@
 # maven-project
 
-Simple Maven Project 2first hook
+Simple Maven Project 3first hook
