@@ -14,5 +14,5 @@ services:
       - "80:80"
     networks
       - webnet
-networks:
-  webnet:                  
+ networks:
+   webnet:                  
