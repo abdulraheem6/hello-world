@@ -9,14 +9,14 @@
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
+   <!-- <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jersey.version>1.17.1</jersey.version>
         <guice.version>3.0</guice.version>
         <guava.version>r09</guava.version>
         <tomcat.target.dev>${env.HOME}/development/servers/tomcat/apache-tomcat-7.0.42/webapps</tomcat.target.dev>
     </properties>
-
+-->
     <build>
         <finalName>ngdemo</finalName>
         <plugins>
@@ -29,7 +29,7 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
-            <plugin>
+          <!--  <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>8.1.11.v20130520</version>
@@ -44,20 +44,20 @@
                     <stopKey/>
                     <stopPort/>
                 </configuration>
-            </plugin>
+            </plugin>-->
             <!-- WAR PLUGIN:
                 TODO: Not sure if patching the 'outputDirectory' is the Maven Way... but it works.
                 TODO: Maybe there is another Maven Lifecycle phase better fit for the job?
                 TODO: Goal: Deploy AND start Tomcat with a single command.
             -->
-            <plugin>
+        <!--    <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
                     <outputDirectory>${tomcat.target.dev}</outputDirectory>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
