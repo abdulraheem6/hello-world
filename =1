@@ -1,0 +1,4 @@
++ grunt@0.4.5
+updated 1 package and audited 4419 packages in 5.925s
+found 52 vulnerabilities (11 low, 31 moderate, 9 high, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details

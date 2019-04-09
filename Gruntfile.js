@@ -292,27 +292,7 @@ module.exports = function (grunt) {
         src: '{,*/}*.css'
       }
     },
-    concurrent: {
-      server: [
-        'coffee:dist',
-        'compass:server',
-        'copy:styles'
-      ],
-      test: [
-        'coffee',
-        'compass',
-        'copy:styles'
-      ],
-      dist: [
-        'coffee',
-        'compass:dist',
-        'copy:styles',
-        'imagemin',
-        'svgmin',
-        'htmlmin'
-      ]
-    },
-    karma: {
+     karma: {
       unit: {
         configFile: 'karma.conf.js',
         singleRun: true
@@ -369,7 +349,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
-    'concurrent:dist',
+   // 'concurrent:dist',
     'autoprefixer',
     'concat',
     'copy:dist',
